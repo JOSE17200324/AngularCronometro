@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DadoComponent } from './dado.component';
+import { CronometroComponent } from './cronometro.component';
 
-describe('DadoComponent', () => {
-  let component: DadoComponent;
-  let fixture: ComponentFixture<DadoComponent>;
+describe('CronometroComponent', () => {
+  let component: CronometroComponent;
+  let fixture: ComponentFixture<CronometroComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DadoComponent ]
+      declarations: [ CronometroComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DadoComponent);
+    fixture = TestBed.createComponent(CronometroComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

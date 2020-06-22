@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Hora } from './IHora';
+import { NumberFormatStyle } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -6,29 +8,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-   mensaje: string = "";
-  
-   valor1: number = 0;
-   valor2: number = 0;
-   valor3: number = 0;
+  hora: number;
+  minuto: number;
+  segundo: number;
 
-  constructor () {
-    this.valor1 = this.generarAleatorio();
-    this.valor2 = this.generarAleatorio();
-    this.valor3 = this.generarAleatorio();
+  totalSegundo: number;
+
+  constructor() {
+    this.hora = 0;
+    this.minuto = 0;
+    this.segundo = 0;
   }
-  public generarAleatorio(): number {
-    return Math.trunc(Math.random() * 6 + 1);
-  }
-  private generarMensaje(): void {
-    if(this.valor1 === this.valor2 && this.valor2 === this.valor3) {
-      this.mensaje = 'GANÓ';
-    } else { this.mensaje = 'PERDIÓ'; }
-  }
-  public tirar(): void {
-    this.valor1 = this.generarAleatorio();
-    this.valor2 = this.generarAleatorio();
-    this.valor3 = this.generarAleatorio();
-    this.generarMensaje();
+  informar(t: Hora): void {
+    this.segundo++;
+    this.hora = Math.trunc(this.minuto / 60);
+    this.minuto = Math.trunc(this.segundo / 60);
   }
 }

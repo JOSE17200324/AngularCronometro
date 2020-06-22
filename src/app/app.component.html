@@ -1,11 +1,8 @@
 <div style="text-align: center">
-    <app-dado valor="{{valor1}}"></app-dado>
-    <app-dado valor="{{valor2}}"></app-dado>
-    <app-dado valor="{{valor3}}"></app-dado>
-    <hr>
-    <button (click)="tirar()">Tirar</button>
-    <hr>
-    <p class="nota">Si saca 3 valores iguales entonces gana</p>
-    <hr>
-    <p>Resultado: {{mensaje}}</p>
+    <h1>Prueba Cronometro</h1>
+    <app-cronometro (reloj)="informar($event)"></app-cronometro>
+    <h2>Tiempo: </h2>
+    <p>Hora: {{hora}}</p>
+    <p>Minutos: {{minuto}}</p>
+    <p>Segundos: {{segundo}}</p>
 </div>

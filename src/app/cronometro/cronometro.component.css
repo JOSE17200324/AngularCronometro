@@ -1,0 +1,13 @@
+.segundero {
+    width: 20rem;
+    height: 5rem;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    align-items: center;
+    font-size: 75px;
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
