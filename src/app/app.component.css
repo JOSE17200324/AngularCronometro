@@ -1,0 +1,19 @@
+button {
+    color: aliceblue;
+    background-color: black;
+    height: 2rem;
+    width: 3rem;
+    border-radius: 2rem;
+}
+
+.nota {
+    width: 10rem;
+    height: 3rem;
+    background-color: black;
+    color: deeppink;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+}
